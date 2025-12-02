@@ -1,0 +1,2 @@
+test:
+	poerey run pytest
