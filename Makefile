@@ -1,2 +1,2 @@
 test:
-	poerey run pytest
+	poetry run pytest access_modifiers -vv
