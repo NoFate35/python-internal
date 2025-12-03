@@ -1,2 +1,2 @@
 test:
-	poetry run pytest access_modifiers -vv
+	poetry run pytest template_method -vv
