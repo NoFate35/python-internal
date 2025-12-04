@@ -1,5 +1,5 @@
 import sys
-print('sys.path', sys.path)
+#cprint('sys.path', sys.path)
 from HTMLDivElement import HTMLDivElement
 
 
