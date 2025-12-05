@@ -1,2 +1,2 @@
 test:
-	poetry run pytest template_method -vv
+	poetry run pytest exceptions -vv
