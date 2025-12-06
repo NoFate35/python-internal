@@ -1,4 +1,4 @@
 # BEGIN (write your solution here)
-class FileError:
+class FileError(Exception):
     pass
 # END
