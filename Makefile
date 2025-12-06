@@ -1,2 +1,2 @@
 test:
-	poetry run pytest exceptions -vv
+	poetry run pytest abstract -vv
