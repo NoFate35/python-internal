@@ -18,5 +18,8 @@ class HTMLElement(ABC):
         return self.attributes
 
     # BEGIN (write your solution here)
+    @abstractmethod
+    def is_valid(self):
+    	pass
     
     # END

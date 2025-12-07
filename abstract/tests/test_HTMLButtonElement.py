@@ -1,5 +1,6 @@
 import sys
 sys.path.append('/home/ivan/python-internal/abstract')
+sys.path.append('/data/data/com.termux/files/home/python-internal/abstract')
 from HTMLButtonElement import HTMLButtonElement
 
 

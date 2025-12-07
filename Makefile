@@ -1,2 +1,2 @@
 test:
-	poetry run pytest abstract -vv
+	poetry run pytest composition -vv
