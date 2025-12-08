@@ -7,3 +7,5 @@ https://softwareengineering.stackexchange.com/questions/200115/what-is-early-and
 https://en.wikipedia.org/wiki/Late_binding
 
 https://ru.wikipedia.org/wiki/метакласс
+
+https://en.wikipedia.org/wiki/Mixin

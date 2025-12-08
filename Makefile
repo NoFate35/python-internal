@@ -1,2 +1,2 @@
 test:
-	poetry run pytest composition -vv
+	poetry run pytest PROBATIONS/classes_validation -vv
