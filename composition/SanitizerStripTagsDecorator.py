@@ -10,7 +10,11 @@ def strip_tags(tag_string):
 class SanitizerStripTagsDecorator:
     def __init__(self, sanitizer):
         self.sanitizer = sanitizer
+        #print('self.sanitizer', self.sanitizer)
 
     # BEGIN (write your solution here)
-    pass
+    def sanitize(self, text):
+        clean_text = strip_tags(text)
+        stripped_text = self.sanitizer.sanitize(clean_text)
+        return stripped_text
     # END

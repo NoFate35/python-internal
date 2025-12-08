@@ -1,4 +1,5 @@
 class Sanitizer:
     # BEGIN (write your solution here)
-    pass
+    def sanitize(self, text):
+        return text.strip()
     # END
