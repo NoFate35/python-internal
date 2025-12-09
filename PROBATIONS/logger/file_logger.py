@@ -4,5 +4,7 @@ from logger import Logger
 
 class FileLogger(Logger):
     # BEGIN (write your solution here)
-    pass
+    def __init__(self):
+        pass
+
     # END

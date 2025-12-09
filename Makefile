@@ -1,2 +1,2 @@
 test:
-	poetry run pytest PROBATIONS/booking_system -vv
+	poetry run pytest PROBATIONS/classes_validation -vv
