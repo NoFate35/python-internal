@@ -11,6 +11,13 @@ class Logger:
     }
     def __init__(self, level='INFO'):
         self.level = level
+    
+    def log(self, level, message):
+        pass
+
+    @abstractmethod
+    def _write_message(self):
+        pass
 
 
     # END
