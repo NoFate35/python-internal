@@ -4,16 +4,17 @@ from logger import Logger
 
 class FileLogger(Logger):
     # BEGIN (write your solution here)
-    def __init__(self, filename):
-        super().__init__()
+    def __init__(self, filename, level = "INFO"):
+        super().__init__(level)
         self.filename = filename
     
     def _write_message(self, message):
-        with open(self.filename, 'w') as file:
-            file.write(f"{datetime.now()} [{self.level}]: {message}")
+        try:
+            with open(self.filename, 'w') as file:
+            	file.write(f"{datetime.now()} [{self.level}]: {message}")
+        except Exception:
+        	print("Ошибка записи в файл")
     
-    def info(self, message):
 
-        self._write_message(message)
 
     # END

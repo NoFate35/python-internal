@@ -3,21 +3,30 @@ from abc import abstractmethod
 
 class Logger:
     # BEGIN (write your solution here)
-    levels = {
+   
+    def __init__(self, level):
+        print("self.level", level)
+        self.level = level
+        self.current = "INFO"
+        self._levels = {
         'DEBUG': 1,
         'INFO': 2,
         'WARNING': 3,
         'ERROR': 4
     }
-    def __init__(self, level='INFO'):
-        self.level = level
-    
-    def log(self, level, message):
-        pass
 
     @abstractmethod
     def _write_message(self):
         pass
 
+    def info(self, message):
+    	print("self._levels[self.level]", self._levels[self.level], "self._levels[self.current]", self._levels[self.current])
+    	if self._levels[self.level] <= self._levels[self.current]:
+    		self._write_message(message)
 
+
+    def warning(self, message):
+    	if self._levels[self.level] > self._levels[self.current]:
+    		self.current = self.level
+    		self._write_message(message)
     # END
