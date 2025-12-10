@@ -5,7 +5,6 @@ class Logger:
     # BEGIN (write your solution here)
    
     def __init__(self, level):
-        print("self.level", level)
         self.level = level
         self.current = "INFO"
         self._levels = {
@@ -20,7 +19,6 @@ class Logger:
         pass
 
     def info(self, message):
-    	print("self._levels[self.level]", self._levels[self.level], "self._levels[self.current]", self._levels[self.current])
     	if self._levels[self.level] <= self._levels[self.current]:
     		self._write_message(message)
 
