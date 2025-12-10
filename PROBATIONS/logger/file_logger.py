@@ -8,13 +8,12 @@ class FileLogger(Logger):
         super().__init__()
         self.filename = filename
     
-    def _write_message(self):
+    def _write_message(self, message):
         with open(self.filename, 'w') as file:
-            file.write(f"")
+            file.write(f"{datetime.now()} [{self.level}]: {message}")
     
     def info(self, message):
 
-        self._write_message(self,message)
-        print('message', message)
+        self._write_message(message)
 
     # END
