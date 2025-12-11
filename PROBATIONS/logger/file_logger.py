@@ -11,10 +11,8 @@ class FileLogger(Logger):
     def _write_message(self, message):
         try:
             with open(self.filename, 'w') as file:
-            	file.write(f"{datetime.now()} [{self.level}]: {message}")
+                 file.write(f"{datetime.now()} [{self.level}]: {message}")
         except Exception:
         	print("Ошибка записи в файл")
-    
-
 
     # END

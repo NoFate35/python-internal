@@ -20,11 +20,10 @@ class Logger:
 
     def info(self, message):
     	if self._levels[self.level] <= self._levels[self.current]:
-    		self._write_message(message)
-
+              self._write_message(message)
 
     def warning(self, message):
     	if self._levels[self.level] > self._levels[self.current]:
-    		self.current = self.level
-    		self._write_message(message)
+            self.current = self.level
+            self._write_message(message)
     # END
